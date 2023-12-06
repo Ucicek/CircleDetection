@@ -40,13 +40,29 @@ Here are the results achieved by overcoming the challenges described above. Thre
 These are not bad considering only 20 epochs with 10,000 data was used. 
 
 
-# Getting Started (How to Run)
+# How to Run
 
-Copy the repository
+Copy the repository.
 ```markdown
 git clone https://github.com/Ucicek/CircleDetection.git
-
-Download the requirments
+```
+Download the requirments,
 ```markdown
 pip install -r requirements.txt
+```
+To generate a dataset, 
+```markdown
+python3 source/data/generate_data.py
+```
+
+To train the model,
+```markdown
+python3 source/train.py
+```
+
+To test the model,
+```markdown
+python3 source/train.py
+```
+Change the config file based on your preferences 
 
