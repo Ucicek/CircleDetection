@@ -1,0 +1,35 @@
+DATA:
+  ROOT_DIR: 'dataset'
+  DATA_DIR:
+    TRAIN: 'train.csv'
+    VAL: 'val.csv'
+    TEST: 'test.csv'
+  MIN_RADIUS: 20
+  MAX_RADIUS: 80
+  IMG_SIZE: 100
+  TRAIN: 0.7
+  VAL: 0.2
+  TEST: 0.1
+  SIZE: 10_000
+  NOISE: 0.5
+  APPLY_PROB: 0.5
+
+TRAIN:
+  TRAIN_DIR: ''
+  EPOCHS: 20
+  BATCH_SIZE: 4
+  INPUT_SHAPE: [1,100,100]
+  NETWORK: 'BasicCNN'
+  CHECKPOINT: 'checkpoint'
+  OPTIMIZER_HYP:
+    OPTIMIZER: 'adam'
+    WEIGHT_DECAY: 0.00005
+    MOMENTUM: 0.960
+    LR0: 0.001
+    LR1: 0.0001
+
+TEST:
+  TEST_DIR: 'test'
+  WEIGHT_PATH: 'pretrained/model1_20.pth'
+  THRESHOLD: 0.5
+  
