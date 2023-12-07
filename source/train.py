@@ -6,7 +6,6 @@ import yaml
 from utils import get_custom_optimizer, get_dataloader, get_network, get_optimizer
 from loss import mae_loss
 
-# Assuming mae_loss and other utility functions are defined as provided earlier
 
 def train(model, config, epochs, device):
     train_loader = get_dataloader(config, train=True, generate=True)
